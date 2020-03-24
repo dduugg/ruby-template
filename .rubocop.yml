@@ -42,8 +42,6 @@ Sorbet/TrueSigil:
     - spec/**/*
 Style/AccessModifierDeclarations:
   EnforcedStyle: inline
-Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
 Style/NegatedIf:
   Enabled: false
 Style/NegatedWhile:
