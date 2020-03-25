@@ -5,4 +5,12 @@ require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new(:spec)
 
-task default: :spec
+task :lint do
+  sh 'rubocop'
+end
+
+task :typecheck do
+  sh 'srb tc'
+end
+
+task default: %i[typecheck lint spec]
