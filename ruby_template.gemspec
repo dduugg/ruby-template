@@ -1,5 +1,6 @@
 # typed: strict
 # frozen_string_literal: true
+
 require_relative 'lib/ruby_template/version'
 
 Gem::Specification.new do |spec|
