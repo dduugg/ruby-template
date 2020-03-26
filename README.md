@@ -1,4 +1,6 @@
 # RubyTemplate
+[![Build Status](https://travis-ci.com/dduugg/ruby_template.svg?branch=master)](https://travis-ci.com/dduugg/ruby_template)
+[![codecov](https://codecov.io/gh/dduugg/ruby_template/branch/master/graph/badge.svg)](https://codecov.io/gh/dduugg/ruby_template)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby_template`. To experiment with that code, run `bin/console` for an interactive prompt.
 
