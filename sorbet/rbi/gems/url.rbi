@@ -115,11 +115,3 @@ class URL::Response < Anonymous_Delegator_4
   def url; end
   def url_obj; end
 end
-module PryByebug
-end
-class Pry
-end
-class Pry::CLI
-end
-class Pry::CLI::NoOptionsError < StandardError
-end

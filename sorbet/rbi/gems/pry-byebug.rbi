@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/pry-byebug/all/pry-byebug.rbi
 #
-# pry-byebug-3.8.0
+# pry-byebug-3.9.0
 
 module PryByebug
   def check_file_context(target, msg = nil); end
@@ -150,35 +150,6 @@ class PryByebug::BreakCommand < Pry::ClassCommand
   include PryByebug::Helpers::Location
   include PryByebug::Helpers::Multiline
 end
-class Pry::CLI
-  def self.add_option_processor(&block); end
-  def self.add_options(&block); end
-  def self.add_plugin_options; end
-  def self.input_args; end
-  def self.input_args=(arg0); end
-  def self.option_processors; end
-  def self.option_processors=(arg0); end
-  def self.options; end
-  def self.options=(arg0); end
-  def self.parse_options(args = nil); end
-  def self.reset; end
-  def self.start(opts); end
-end
-class Pry::CLI::NoOptionsError < StandardError
-end
-class Pry::Slop::Option
-  def argument?; end
-  def as?; end
-  def autocreated?; end
-  def callback?; end
-  def default?; end
-  def delimiter?; end
-  def limit?; end
-  def match?; end
-  def optional?; end
-  def optional_argument?; end
-  def required?; end
-  def tail?; end
-end
-class Pry::CLI::NoOptionsError < StandardError
+class PryByebug::ExitAllCommand < Pry::Command::ExitAll
+  def process; end
 end
