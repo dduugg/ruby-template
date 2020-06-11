@@ -4,7 +4,8 @@ require:
   - rubocop-sorbet
 
 AllCops:
-  TargetRubyVersion: 2.4
+  NewCops: enable
+  TargetRubyVersion: 2.5
 
 Layout/ClassStructure:
   Enabled: true
@@ -50,11 +51,3 @@ Style/Next:
   Enabled: false
 Style/IfUnlessModifier:
   Enabled: false
-
-# Pending Cops
-Style/HashEachMethods:
-  Enabled: true
-Style/HashTransformKeys:
-  Enabled: true
-Style/HashTransformValues:
-  Enabled: true

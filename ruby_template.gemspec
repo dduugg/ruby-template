@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'A template for creating ruby projects'
   spec.description   = 'A template for creating ruby projects'
   spec.homepage      = 'https://github.com/dduugg/ruby_template'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.4.0')
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
 
   spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
 
@@ -29,13 +29,13 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'codecov', '~> 0.1.16'
+  spec.add_development_dependency 'codecov', '~> 0.1.17'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.9'
-  spec.add_development_dependency 'rubocop', '~> 0.80.1'
-  spec.add_development_dependency 'rubocop-rspec', '~> 1.38'
-  spec.add_development_dependency 'rubocop-sorbet', '~> 0.3.7'
+  spec.add_development_dependency 'rubocop', '~> 0.85.1'
+  spec.add_development_dependency 'rubocop-rspec', '~> 1.40'
+  spec.add_development_dependency 'rubocop-sorbet', '~> 0.4.0'
   spec.add_development_dependency 'simplecov', '~> 0.18.5'
-  spec.add_development_dependency 'sorbet', '~> 0.5.5460'
+  spec.add_development_dependency 'sorbet', '~> 0.5.5745'
   spec.add_runtime_dependency 'sorbet-runtime', '~> 0.5'
 end
