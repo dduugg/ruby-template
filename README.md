@@ -24,7 +24,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Use this as the repository template when creating a new GitHub repository. Rename things to correspond to the new project, e.g.
+
+```
+git grep -l RubyTemplate | xargs gsed -i 's|RubyTemplate|Roboadvisor|g'
+git grep -l ruby_template | xargs gsed -i 's|ruby_template|roboadvisor|g'
+mv spec/ruby_template_spec.rb spec/roboadvisor.rb
+mv ruby_template.gemspec roboadvisor.gemspec
+mv lib/ruby_template lib/roboadvisor
+mv lib/ruby_template.rb lib/roboadvisor.rb
+```
 
 ## Development
 
